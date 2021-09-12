@@ -58,3 +58,26 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+
+
+@media(max-width:414px){
+    .search{
+        &-button{
+            outline: none;
+            border: none;
+            background-color: #3f51b5;
+            padding: 10px;
+            border-left: 1 px solid rgba(0, 0, 0, 0);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #fff;
+            font-weight: 700;
+            transition: 0.3s;
+            cursor: pointer;
+            position: absolute;
+            top: 22px;
+            right: 12px;
+        }
+    }
+}
