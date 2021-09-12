@@ -1,7 +1,6 @@
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-require('dotenv').config();
 
 @Injectable()
 
@@ -16,7 +15,7 @@ export class HttpHeadersInterceptors implements HttpInterceptor{
                 'x-rapidapi-host':'rawg-video-games-database.p.rapidapi.com',
             },
             setParams:{
-                key:process.env.API_KEY,
+                key:'305cbfb1bdbe4464a31c00a8eb7ef334',
             }
         });
         return next.handle(req);
